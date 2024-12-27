@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import './App.css'
 
 function App() {
@@ -7,7 +7,7 @@ function App() {
   const [direction, setDirection] = useState("to right")
   
   return (
-    <div className="app" style={{backgroundImage: `linear-gradient(${direction}, ${firstColor}, ${secondColor})`}}>
+    <div className="app" style={{background: `linear-gradient(${direction}, ${firstColor}, ${secondColor})`}}>
       <div className='main-container'>
           <h1>Background Color Picker</h1>
           <div>
@@ -30,7 +30,7 @@ function App() {
             </div>
           </div>
           <p>linear-gradient({direction}, {firstColor} , {secondColor})</p>
-          <p className='copy'>Copy the line above and paste as in your background-image css</p>
+          <p className='copy'>Copy the line above and paste it on your background css</p>
           </div>
       </div>
     </div>
